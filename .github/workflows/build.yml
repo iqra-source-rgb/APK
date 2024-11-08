@@ -62,7 +62,7 @@ jobs:
           echo -e "\n24333f8a63b6825ea9c5514f83c2829b004d1fee" | sudo tee -a /usr/lib/android-sdk/licenses/android-sdk-license > /dev/null
           echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" | sudo tee -a /usr/lib/android-sdk/licenses/android-sdk-preview-license > /dev/null
           
-        
+          # Install Android SDK components without the emulator
           yes | sdkmanager --licenses
           sdkmanager --update
           sdkmanager "platform-tools" "platforms;android-30" "build-tools;30.0.3" "cmdline-tools;latest"
